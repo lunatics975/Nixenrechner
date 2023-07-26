@@ -16,17 +16,27 @@ cin >> choose;
 if (choose == 1){
     cout<<"Gebe die Euroanzahl an:"<<endl;
     cin >> euro;
-    nixe = euro*42;
-    cout<<"Das sind "<< nixe << " Nixe."<<endl;
-    cout<<"Zum erneutem Rechnen Programm neu starten."<<endl;
+    if (euro<0){
+        cout<<"Die angegebene Zahl ist negativ. Bitte versuch es erneut und gib eine positive Euroanzahl an."<<endl;
+    }else{
+        nixe = euro*42;
+        cout<<"Das sind "<< nixe << " Nixe."<<endl;
+        cout<<"Zum erneutem Rechnen Programm neu starten."<<endl;
+    }
 }
 
-if (choose == 2){
+else if (choose == 2){
     cout<<"Gebe die Nixeanzahl an:" <<endl;
     cin >> nixe;
-    euro=nixe/42;
-    cout << "Das sind " << euro << " Euro."<<endl;
-    cout<<"Zum erneutem Rechnen Programm neu starten."<<endl;
+    if (nixe<0){
+            cout<<"Die angegebene Zahl ist negativ. Bitte versuch es erneut und gib eine positive Euroanzahl an."<<endl;        
+    }else{
+        euro=nixe/42;
+        cout << "Das sind " << euro << " Euro."<<endl;
+        cout<<"Zum erneutem Rechnen Programm neu starten."<<endl;
+    }
+}else{
+    cout<<"unguelitige Zahl eingegeben. Bitte erneut versuchen."<<endl;
 }
 	return 0;
 }
