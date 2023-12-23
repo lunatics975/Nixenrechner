@@ -36,7 +36,7 @@ else if (choose == 2){
         cout<<"Zum erneutem Rechnen Programm neu starten."<<endl;
     }
 }else{
-    cout<<"unguelitige Zahl eingegeben. Bitte erneut versuchen."<<endl;
+    cout<<"Unguelitige Angabe. Bitte erneut versuchen."<<endl;
 }
 	return 0;
 }
