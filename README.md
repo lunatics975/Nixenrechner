@@ -1,2 +1,2 @@
 # Nixenrechner
-Copyright 2023 by Mingqi Li
+Copyright 2023 by lunatics975
